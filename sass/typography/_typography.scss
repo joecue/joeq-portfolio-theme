@@ -12,3 +12,87 @@ textarea {
 @import "headings";
 
 @import "copy";
+
+h1.site-title{
+ font-family: $font__site-title;
+ font-size: 63px;
+ color: $color__site-title;
+ text-shadow: 2px 2px 4px rgba(27,27,27,1);
+ margin: 15px 0 4px 45px;
+ }
+
+h1.site-title a{
+ color: $color__site-title;
+}
+
+.site-title-pre{ 
+ font-size: 35px;
+ font-weight: 700;
+ margin: 0 0 5px 0;
+}
+
+.site-description{
+ font-size: 22px;
+ font-weight: bold;
+ margin: 20px 0 0 0;
+}
+
+ul#primary-menu, ul#footer-menu{
+ margin: 25px 0 0 0;
+}
+
+ul#primary-menu li a, ul#footer-menu li a{
+ font-size: 22px;
+ font-weight: 700;
+ color: #fff;
+}
+
+h3.site-hero-learn{
+ font-size: 30px;
+ font-weight: 900;
+}
+
+h2.homepage{
+ font-size: 60px;
+ font-weight: 900;
+}
+
+h4.skills{
+ font-weight: 700;
+}
+
+div.contact-me-block p{
+ font-family: $font__heading;
+ font-weight: 600;
+ font-size: 24px;
+}
+
+p.my-name{
+ font-size: 30px;
+ font-weight: 700;
+ margin: 5px 0;
+}
+
+p.my-title{
+ font-size: 28px;
+ color: $color__link;
+ margin: 5px 0;
+}
+
+p.about-me-blurb{
+ margin: 10px 0;
+ font-size: 20px;
+}
+
+p.not-a-job{
+ font-family: $font__heading;
+ font-weight: 700;
+ margin: 25px 0 0 0;
+ font-size: 20px
+}
+
+p.who-i-am{
+ font-family: $font__heading;
+ font-weight: 900;
+ font-size: 24px;
+}
