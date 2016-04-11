@@ -1,6 +1,7 @@
 /*!
-Theme Name: joeq_dev
-  Theme URI:    http://www.joequerin.com 
+
+ Theme Name: joeq_dev
+ Theme URI:    http://www.joequerin.com 
  Description:  Joe Querin Personal Portfolio Theme 
  Author: Joe Querin 
  Author URI: http://www.joequerin.com 
@@ -94,8 +95,10 @@ embed,iframe,object{max-width:100%}.wp-caption{margin-bottom:1.5em;max-width:100
 .gallery-caption{display:block}div.site-spacer{height:26px}div.site-hero>div.columns{padding:0;margin:0}
 div.site-hero-section,div.latest-articles-section{border-bottom:2px solid #a25e05}
 div.site-home-block{margin:20px 0 0 0}div.site-hero-learn-more-block{margin:230px 0 0 0;text-align:center}
-a.button{border-radius:35px;width:250px;font-size:25px}div.contact-me-section{background-image:url("images/lighter-boards-bg.jpg");background-repeat:repeat-x;background-position:center center;height:400px}
-div.contact-me-spacers{height:220px}div.contact-me-block{margin:140px 0 0 0}div.site-footer{margin:20px 0 0 0;background:linear-gradient(#e88b12,#7e4b0a);height:250px;padding:25px 50px 0 50px}
+a.button{border-radius:35px;width:250px;font-size:25px}a.button:visited{color:#fff}
+div.contact-me-section{background-image:url("images/lighter-boards-bg.jpg");background-repeat:repeat-x;background-position:center center;height:400px}
+div.contact-me-spacers{height:220px}div.contact-me-block{margin:140px 0 0 0}div.article-section-spacer{height:120px}
+div.about-me-spacer{height:120px}div.site-footer{margin:20px 0 0 0;background:linear-gradient(#e88b12,#7e4b0a);height:250px;padding:25px 50px 0 50px}
 div.site-info{width:400px;float:right;color:#fff;font-size:14px}div.footer-row{margin:25px 0 0 0}
-.social-icon{margin:10px}@media screen and (min-width:37.5em){.menu-toggle{display:none}
-.main-navigation ul{display:block}}
+.social-icon{margin:10px}div.sstfeed{padding:0 0 10px 0;margin:0 0 5px 0;border:dashed 1px #efefef}
+@media screen and (min-width:37.5em){.menu-toggle{display:none}.main-navigation ul{display:block}}
