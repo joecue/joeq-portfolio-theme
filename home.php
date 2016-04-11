@@ -42,7 +42,7 @@ get_header(); ?>
            </p>
            <?php endif; ?>
             <div class="site-hero-learn-more-block">
-             <a href="#skills-section"><h3 class="site-hero-learn">Learn More</h3><img src="<?php echo get_template_directory_uri() ?>/images/down-arrow.png" border="0" alt="Learn more below"></a>
+             <!--<a href="#skills-section"><h3 class="site-hero-learn">Learn More</h3><img src="<?php echo get_template_directory_uri() ?>/images/down-arrow.png" border="0" alt="Learn more below"></a>-->
             </div>
        </div>
        <!-- .site-branding -->
@@ -52,23 +52,9 @@ get_header(); ?>
       </div>
      </div>
     </div>
-     <?php get_template_part( 'template-parts/content', 'skills' ); ?>
     <div class="row">
-     <div class="large-12 medium-12 small-12 columns contact-me-spacers">&nbsp;</div>
-    </div>
-    <div class="contact-me-section">
-     <div class="row">
-      <div class="large-12 medium-12 small-12 columns text-center">
-        <div class="contact-me-block">
-          <p>No two websites are the same.  Why should the design be then?</p>
-          <a href="mailto:joecue@gmail.com" alt="Email Link" class="button">Contact Me</a>
-        </div>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="large-12 medium-12 small-12 columns contact-me-spacers">&nbsp;</div>
-    </div>
+     <div class="large-12 medium-12 small-12 columns about-me-spacer">&nbsp;</div>
+    </div>    
     <div class="about-me-section">
      <div class="row">
       <div class="large-12 medium-12 small-12 columns">
@@ -80,17 +66,20 @@ get_header(); ?>
      </div>
      <div class="row">
       <div class="large-7 large-centered medium-7 medium-centered small-12 columns">
-       <p class="about-me-blurb">I am Joe Querin, a thirty-six year old designer/developer from northern OH.  I have been in the field of Web Design and Development for 17 years.  I have a passion for creating and designing challenging, yet intituitive web applications and sites.</p>
-       <p class="about-me-blurb"><a href="/aboutme">Learn more about me here.</a></p>
+       <p class="about-me-blurb">I am Joe Querin, a thirty-seven year old designer/developer from northern OH.  I have been in the field of Web Design and Development for 17 years.  I have a passion for creating and designing challenging, yet intituitive web applications and sites.</p>
+       <p class="about-me-blurb"><!--<a href="/aboutme">Learn more about me here.</a>--></p>
       </div>
      </div>
      <div class="row">
       <div class="large-12 medium-12 small-12 columns">
        <p class="not-a-job text-center">Making web sites both beautiful and functional is not just a job...</p>
        <p class="who-i-am text-center">...it's part of who I am.</p>
-       <a href="/portfolio" class="button float-center">My Portfolio</a>
+       <a href="https://www.behance.net/joecue" target="_blank" class="button float-center">My Portfolio</a>
       </div>
      </div>
+    </div>
+    <div class="row">
+     <div class="large-12 medium-12 small-12 columns article-section-spacer">&nbsp;</div>
     </div>
     <div class="latest-articles-section">
      <div class="row">
@@ -119,6 +108,24 @@ get_header(); ?>
       </div>
      </div>
     </div>
+    <?php //get_template_part( 'template-parts/content', 'skills' ); ?>
+    <div class="row">
+     <div class="large-12 medium-12 small-12 columns contact-me-spacers">&nbsp;</div>
+    </div>
+    <div class="contact-me-section">
+     <div class="row">
+      <div class="large-12 medium-12 small-12 columns text-center">
+        <div class="contact-me-block">
+          <p>No two websites are the same.  Why should the design be then?</p>
+          <a href="mailto:joecue@gmail.com" alt="Email Link" class="button">Contact Me</a>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class="row">
+     <div class="large-12 medium-12 small-12 columns contact-me-spacers">&nbsp;</div>
+    </div>
+
 <?php get_sidebar('home-bottom') ?>
 
 

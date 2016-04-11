@@ -128,6 +128,10 @@ a.button {
  font-size: 25px;
 }
 
+a.button:visited{
+ color: #fff;
+}
+
 div.contact-me-section{
  background-image: URL('images/lighter-boards-bg.jpg');
  background-repeat: repeat-x;
@@ -141,6 +145,14 @@ div.contact-me-spacers{
 
 div.contact-me-block{
  margin: 140px 0 0 0;
+}
+
+div.article-section-spacer{
+ height: 120px;
+}
+
+div.about-me-spacer{
+ height: 120px;
 }
 
 div.site-footer{
@@ -163,4 +175,15 @@ div.footer-row{
 
 .social-icon{
  margin: 10px;
+}
+
+div.sstfeed{
+ padding: 0 0 10px 0;
+ margin: 0 0 5px 0;
+ border: dashed 1px #efefef;
+}
+
+div.page-content{
+ background: #fff;
+ width: 100%;
 }
