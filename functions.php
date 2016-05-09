@@ -45,6 +45,7 @@ function joeq_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'joeq' ),
+  'footer' => esc_html__( 'Footer Menu', 'joeq' ),
 	) );
 
 	/*
@@ -107,6 +108,16 @@ function joeq_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+ 
+	register_sidebar( array(
+		'name'          => esc_html__( 'Homepage Bottom Sidebar', 'joeq' ),
+		'id'            => 'home-sidebar',
+		'description'   => '',
+		'before_widget' => '<div class="column">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="homepage text-center">',
+		'after_title'   => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'joeq_widgets_init' );
 
@@ -114,9 +125,39 @@ add_action( 'widgets_init', 'joeq_widgets_init' );
  * Enqueue scripts and styles.
  */
 function joeq_scripts() {
+/* Add Google Fonts */
+ 
+ wp_enqueue_style( 'google-font-site-title', '//fonts.googleapis.com/css?family=Rock+Salt'); 
+ 
+ wp_enqueue_style( 'google-font-headings', '//fonts.googleapis.com/css?family=Raleway'); 
+
+ wp_enqueue_style( 'google-font-body', '//fonts.googleapis.com/css?family=Lato');
+ 
+ wp_enqueue_style( 'google-font-code', '//fonts.googleapis.com/css?family=Source+Code+Pro');
+ 
+/* End Google Fonts */
+ 
+/* Add Foundation 6 CSS Support */
+ 
+    wp_enqueue_style( 'foundation-styles', get_template_directory_uri() . '/foundation/css/foundation.css'); 
+
+    wp_enqueue_style( 'foundation-app-styles', get_template_directory_uri() . '/foundation/css/app.css');
+
+/* End Foundation 6 CSS Support */
+ 
 	wp_enqueue_style( 'joeq-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'joeq-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+/* Add Foundation 6 JS Support */ 
+
+    wp_enqueue_script( 'foundation-what-input', get_template_directory_uri() . '/foundation/js/vendor/what-input.min.js', array('jquery','foundation-foundation'), '20151123', true ); 
+
+    wp_enqueue_script( 'foundation-foundation', get_template_directory_uri() . '/foundation/js/foundation.min.js', array('jquery'), '20151123', true );
+
+    wp_enqueue_script( 'foundation-foundation-init', get_template_directory_uri() . '/js/app.js', array('jquery', 'foundation-foundation'), '20151123', true ); 
+ 
+/* End Foundation 6 JS Support */ 
+
+    wp_enqueue_script( 'joeq-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'joeq-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
