@@ -32,9 +32,9 @@ pre{background:#eee;font-family:"Source Code Pro 300",monospace;font-size:15px;f
 code,kbd,tt,var{font-family:"Source Code Pro",monospace;font-size:15px;font-size:.9375rem}
 abbr,acronym{border-bottom:1px dotted #666;cursor:help}mark,ins{background:#fff9c0;text-decoration:none}
 big{font-size:125%}h1.site-title{font-family:"Rock Salt",sans-serif;font-size:63px;color:#2ea2e4;text-shadow:2px 2px 4px #1b1b1b;margin:15px 0 4px 45px}
-h1.site-title a{color:#2ea2e4}.site-title-pre{font-size:35px;font-weight:700;margin:0 0 5px 0}
-.site-description{font-size:22px;font-weight:bold;margin:20px 0 0 0}ul#primary-menu,ul#footer-menu{margin:25px 0 0 0}
-ul#primary-menu li a,ul#footer-menu li a{font-size:22px;font-weight:700;color:#fff}
+h1.site-title a{color:#2ea2e4}h2.comments-title,h2.widget-title{font-size:24px}h3.comment-reply-title{font-size:20px}
+.site-title-pre{font-size:35px;font-weight:700;margin:0 0 5px 0}.site-description{font-size:22px;font-weight:bold;margin:20px 0 0 0}
+ul#primary-menu,ul#footer-menu{margin:25px 0 0 0}ul#primary-menu li a,ul#footer-menu li a{font-size:22px;font-weight:700;color:#fff}
 h3.site-hero-learn{font-size:30px;font-weight:900}h2.homepage{font-size:60px;font-weight:900}
 h4.skills{font-weight:700}div.contact-me-block p{font-family:"Raleway",sans-serif;font-weight:600;font-size:24px}
 p.my-name{font-size:30px;font-weight:700;margin:5px 0}p.my-title{font-size:28px;color:#2ea2e4;margin:5px 0}
@@ -52,8 +52,9 @@ input[type="text"],input[type="email"],input[type="url"],input[type="password"],
 input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,textarea:focus{color:#111}
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"]{padding:3px}
 textarea{padding-left:3px;width:100%}a{color:#2ea2e4}a:visited{color:#2ea2e4}a:hover,a:focus,a:active{color:#2ea2e4}
-a:focus{outline:thin dotted}a:hover,a:active{outline:0}.main-navigation{clear:both;display:block;float:left;width:100%}
-.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}.main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:1.5em;left:-999em;z-index:99999}
+a:focus{outline:thin dotted}a:hover,a:active{outline:0}a.home-link{font-size:22px;font-weight:700;color:#fff}
+.main-navigation{clear:both;display:block;float:left;width:100%}.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}
+.main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:1.5em;left:-999em;z-index:99999}
 .main-navigation ul ul ul{left:-999em;top:0}.main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{left:100%}
 .main-navigation ul ul a{width:200px}.main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
 .main-navigation li{float:left;position:relative}.main-navigation a{display:block;text-decoration:none}
@@ -89,5 +90,6 @@ div.contact-me-spacers{height:220px}div.contact-me-block{margin:140px 0 0 0}div.
 div.about-me-spacer{height:120px}div.site-footer{margin:20px 0 0 0;background:linear-gradient(#e88b12,#7e4b0a);height:250px;padding:25px 50px 0 50px}
 div.site-info{width:400px;float:right;color:#fff;font-size:14px}div.footer-row{margin:25px 0 0 0}
 .social-icon{margin:10px}div.sstfeed{padding:0 0 10px 0;margin:0 0 5px 0;border:dashed 1px #efefef}
-div.page-content{background:#fff;width:100%}@media screen and (min-width:37.5em){.menu-toggle{display:none}
-.main-navigation ul{display:block}}
+div.page-content{background:#fff;width:100%;padding:15px 0 0 0}div.page-header{margin:30px 0 0 0}
+@media screen and (min-width:37.5em){.menu-toggle{display:none}.main-navigation ul{display:block}
+}

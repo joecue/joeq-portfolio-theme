@@ -25,7 +25,17 @@
 <div id="page" class="site"> 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'joeq' ); ?></a>
  <div class="row">
-  <div class="large-6 medium-6 small-12 columns">&nbsp;</div>
+  <div class="large-6 medium-6 small-12 columns">
+		<?php
+			if ( is_front_page() && is_home() ){
+			}
+			else{
+				?>
+				<div class="page-header"><a href="/" class="home-link">Home</a></div>
+			<?php
+			}
+		?>
+		</div>
   <div class="large-6 medium-6 small-12 columns">
    <nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'joeq' ); ?></button>

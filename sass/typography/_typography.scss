@@ -25,6 +25,14 @@ h1.site-title a{
  color: $color__site-title;
 }
 
+h2.comments-title, h2.widget-title{
+	font-size: 24px;
+}
+
+h3.comment-reply-title{
+	font-size: 20px;
+}
+
 .site-title-pre{ 
  font-size: 35px;
  font-weight: 700;

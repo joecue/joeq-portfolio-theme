@@ -27,23 +27,24 @@
    <div class="large-3 medium-3 small-3 columns">
     <div class="row small-up-1, medium-up-3 large-up-3">
      <div class="column">
-      <img src="//placehold.it/60x60" class="social-icon">
+      <a href="https://www.linkedin.com/in/jquerin" target="_blank"><img src="/wp-content/themes/joeq/images/linkin-btn.png" class="social-icon"></a>
      </div>
      <div class="column">
-      <img src="//placehold.it/60x60" class="social-icon">
+      <a href="https://profiles.wordpress.org/joecue" target="blank"><img src="/wp-content/themes/joeq/images/wordpress-btn.png" class="social-icon"></a>
+     </div>
+					<div class="column">
+      <a href="https://github.com/joecue" target="_blank"><img src="/wp-content/themes/joeq/images/github-btn.png" class="social-icon"></a>
      </div>
      <div class="column">
-      <img src="//placehold.it/60x60" class="social-icon">
+      <a href="https://www.behance.net/joecue" target="_blank"><img src="/wp-content/themes/joeq/images/behance-btn.png" class="social-icon"></a>
      </div>
      <div class="column">
-      <img src="//placehold.it/60x60" class="social-icon">
+      <a href="https://twitter.com/joequerin" target="_blank"><img src="/wp-content/themes/joeq/images/twitter-btn.png" class="social-icon"></a>
      </div>
      <div class="column">
-      <img src="//placehold.it/60x60" class="social-icon">
+      <a href="https://www.instagram.com/joecue/" target="_blank"><img src="/wp-content/themes/joeq/images/instagram-btn.png" class="social-icon"></a>
      </div>
-     <div class="column">
-      <img src="//placehold.it/60x60" class="social-icon">
-     </div>
+
     </div>
    </div>
   </div>
