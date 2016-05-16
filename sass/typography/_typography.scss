@@ -13,6 +13,16 @@ textarea {
 
 @import "copy";
 
+h1{
+	font-size: 2em;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
 h1.site-title{
  font-family: $font__site-title;
  font-size: 63px;
