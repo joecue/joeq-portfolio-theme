@@ -60,6 +60,11 @@
     <!-- .site-info -->
    </div>
   </div>
+  <div class="row">
+   <div class="large-12 medium-12 small-12 columns">
+    <p class="footer">All photos of Joe, courtesy of <a href="http://www.qcrewphotography.com" target="_blank">Q Crew Photography, Ltd.</a></p>
+   </div>
+  </div>
  </footer>
  <!-- #colophon -->
 </div>

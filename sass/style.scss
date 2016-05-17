@@ -170,7 +170,7 @@ div.site-info{
 }
 
 div.footer-row{
- margin: 25px 0 0 0;
+ margin: 15px 0 0 0;
 }
 
 .social-icon{
@@ -180,7 +180,6 @@ div.footer-row{
 div.sstfeed{
  padding: 0 0 10px 0;
  margin: 0 0 5px 0;
- border: dashed 1px #efefef;
 }
 
 div.page-content{
@@ -191,4 +190,14 @@ div.page-content{
 
 div.page-header{
 	margin: 30px 0 0 0;
+}
+
+div.site-info a{
+ color: #fff;
+}
+
+p.footer, p.footer a {
+ color: #fff;
+ font-size: 9pt;
+ margin: 0;
 }
