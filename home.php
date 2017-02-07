@@ -52,9 +52,43 @@ get_header(); ?>
       </div>
      </div>
     </div>
+
+    <div class="latest-articles-section">
+     <div class="row">
+      <div class="large-12 medium-12 small-12">
+       <h2 class="homepage text-center">Latest Articles</h2>
+       <div class="row large-up-4">
+        <?php if ( have_posts() ) : ?>
+
+        <?php /* Start the Loop */ ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+
+        <?php
+         /* Include the Post-Format-specific template for the content.
+          * If you want to override this in a child theme, then include a file
+          * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+          */
+         get_template_part( 'template-parts/content', 'home' );
+        ?>
+
+        <?php endwhile; ?>
+
+        <?php else : ?>
+
+        <?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+        <?php endif; ?>
+        </div>
+      <div class="row">
+       <div class="small-12 column">&nbsp;</div>
+      </div>
+      </div>
+     </div>
+    </div>
+
     <div class="row">
      <div class="large-12 medium-12 small-12 columns about-me-spacer">&nbsp;</div>
-    </div>    
+    </div>
     <div class="about-me-section">
      <div class="row">
       <div class="large-12 medium-12 small-12 columns">
@@ -75,36 +109,6 @@ get_header(); ?>
        <p class="not-a-job text-center">Making web sites both beautiful and functional is not just a job...</p>
        <p class="who-i-am text-center">...it's part of who I am.</p>
        <a href="https://www.behance.net/joecue" target="_blank" class="button float-center">My Portfolio</a>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="large-12 medium-12 small-12 columns article-section-spacer">&nbsp;</div>
-    </div>
-    <div class="latest-articles-section">
-     <div class="row">
-      <div class="large-12 medium-12 small-12">
-       <h2 class="homepage text-center">Latest Articles</h2>
-        <?php if ( have_posts() ) : ?>
-
-        <?php /* Start the Loop */ ?>
-        <?php while ( have_posts() ) : the_post(); ?>
-
-        <?php
-         /* Include the Post-Format-specific template for the content.
-          * If you want to override this in a child theme, then include a file
-          * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-          */
-         get_template_part( 'template-parts/content', 'home' );
-        ?>
-
-        <?php endwhile; ?>
-
-        <?php else : ?>
-
-        <?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-        <?php endif; ?>       
       </div>
      </div>
     </div>
