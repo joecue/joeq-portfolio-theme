@@ -77,6 +77,10 @@ function joeq_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+ 
+ // Custom Image Sizes
+ add_image_size( 'homepage_post_thumbnail', 300, 100, array( 'center', 'top' ) );
+ 
 }
 endif; // joeq_setup
 add_action( 'after_setup_theme', 'joeq_setup' );

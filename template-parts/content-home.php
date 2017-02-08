@@ -9,17 +9,15 @@
 
 ?>
 
-<div class="row">
-	<div class="large-2 medium-2 show-for-medium columns">
-		<?php 
-		if ( has_post_thumbnail() ) {
-	the_post_thumbnail('thumbnail');
-}  
-		?>
-	</div>
-	<div class="large-10 medium-10 small-12 columns">
+
+	<div class="column column-block" style="border-radius: 15px; padding: 5px; min-height: 300px; max-height: 300px; margin: 10px 15px; box-shadow: 0 0 25px #667788;">
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
+     <div style="text-align:center;">
+     <?php if ( the_post_thumbnail('homepage_post_thumbnail') != '' ) :
+         the_post_thumbnail('homepage_post_thumbnail');
+      endif; ?>
+     </div>
+     <header class="entry-header">
 						<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 						<?php if ( 'post' === get_post_type() ) : ?>
@@ -48,4 +46,3 @@
 
 				</article><!-- #post-## -->
 			</div>
-</div>
